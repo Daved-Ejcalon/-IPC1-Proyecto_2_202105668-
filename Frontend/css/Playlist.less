@@ -1,0 +1,46 @@
+@light: #d8dbe0;
+@dark: #28292c;
+
+@texto-oscuro : #303133;
+@texto-claro : #777;
+@negro-custom: #141618;
+@fondo-oscuro : #1b1c1d;
+@blanco: #fff;
+@gris-claro: #DFDFDE;
+@gris-oscuro: #5c636a;
+@azul-claro: #317cc2;
+@azul-oscuro: #1d476f;
+
+.peliculas{
+    min-height: 76.75vh;
+    .container{
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            .card{
+                margin: 2rem;
+                .videoContainer{
+                    min-height: 12rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    iframe{
+                        border-radius: 5px;
+                    }
+                }
+                .card-body{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                }
+            }
+        }
+        
+    }
+}
+
+

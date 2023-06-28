@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver pelicula</title>
+    <link rel="stylesheet" href="css/Base.css">
+    <link rel="stylesheet" href="css/VerPelicula.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9afa97dfd8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand" href="" id="logo_navbar">
+            <img src="images/logo.png" width="60" height="40" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="" id="nav-item-mis-datos">Mis Datos</a>
+            </div>
+        </div>
+        <form class="form-inline">
+            <img src="images/exit.svg" width="60" height="40" alt="" id="exit_user">
+        </form>
+    </nav>
+
+    <section class="datos_pelicula">
+        <div class="container">
+            <div class="col izq">
+                <div class="titulo-seccion">
+                    <h2 id="titulo_pelicula">Titulo</h2>
+                </div>
+                <div class="informacion_pelicula">
+
+                    <div id="videoContainer" class="videoContainer"></div>
+                    <h3 id="genero_pelicula">Genero: </h3>
+                    <h3 id="clasificacion_pelicula">Clasificación: </h3>
+                    <h3 id="anio_pelicula">Año: </h3>
+                    <h3 id="duracion_pelicula">Duracion: </h3>
+                </div>
+                
+            </div>
+
+            <div class="col der">
+                <div class="titulo-seccion">
+                    <h2>Comentarios</h2>
+                </div>
+                <div class="container tabla-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Usuario</th>
+                                        <th scope="col">Comentario</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody_tabla_comentarios">
+        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                      <label for="input_comentario">Escribir comentario</label>
+                      <input type="text" class="form-control" id="input_comentario" aria-describedby="comentarioNuevo" placeholder="Ingresa tu comentario">
+                      <small id="comentarioNuevo" class="form-text text-muted">Tu comentario será agregado para todos.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit_comentario">Enviar comentario</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="js/NavbarVerPelicula.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/tooltips.js"></script>
+    <script src="js/VerPelicula.js"></script>
+
+</body>
+
+</html>

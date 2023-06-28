@@ -1,0 +1,102 @@
+@light: #d8dbe0;
+@dark: #28292c;
+
+@texto-oscuro : #303133;
+@texto-claro : #777;
+@negro-custom: #141618;
+@fondo-oscuro : #1b1c1d;
+@blanco: #fff;
+@gris-claro: #DFDFDE;
+
+
+.inicio{
+    background-color: @fondo-oscuro;
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .col.izq{
+            width: 40%;
+            display: flex;
+            align-items:center;
+            padding-right: 5%;
+            img{
+                width: 30rem;
+                height: auto;
+                margin: 2rem;
+            }
+        }
+        .col.der{
+            width: 60%;
+            padding-left: 5%;
+            img{
+                width: 50rem;
+                height: auto;
+                margin: 2rem;
+            }
+        }
+    }
+    
+}
+.acercade{
+    padding: 2.525rem 0;
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .col.izq{
+            width: 30%;
+            border-right: 1px solid @gris-claro;
+            display: flex;
+            align-items:center;
+            padding-right: 5%;
+        }
+        .col.der{
+            width: 70%;
+            padding-left: 5%;
+            .texto{
+                p{
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    color: @texto-claro;
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+            }
+        }
+    }
+}
+
+.contacto{
+    .datos{
+        padding: 5rem 0 11.875rem 0;
+        background-color: @fondo-oscuro;
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .blurb{
+            background: @blanco;
+            border: 6px double @gris-claro;
+            padding: 2.25rem;
+            text-align: center;
+            width: 25%;
+            margin: 0 auto;
+        }
+        h3{
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2.6875rem;
+            margin-bottom: 1.125rem;
+            border-bottom: 1px solid @gris-claro;
+        }
+        p{
+            font-size : 1rem;
+            color: #777;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/Base.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="" id="logo_navbar">
+            <img src="images/logo.png" width="60" height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="" id="nav-item-Home">Home</a>
+                <a class="nav-item nav-link" href="" id="nav-item-IniciarSesion">Iniciar sesión</a>
+                <a class="nav-item nav-link" href="" id="nav-item-Registrarme">Registrarme</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <form id="formulario" action="/" method="post">
+            <div class="form-group">
+                <label for="nombreInput">Nombre</label>
+                <input type="text" class="form-control" id="nombreInput" aria-describedby="emailHelp"
+                    placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellidoInput">Apellido</label>
+                <input type="text" class="form-control" id="apellidoInput" aria-describedby="emailHelp"
+                    placeholder="Apellido">
+            </div>
+            <div class="form-group">
+                <label for="userInput">Usuario</label>
+                <input type="text" class="form-control" id="userInput" aria-describedby="emailHelp"
+                    placeholder="Nombre de usuario">
+            </div>
+            <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnSubmit">Sign in</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        /*
+        $("#formulario").on("submit", function(event){
+            event.preventDefault();
+            alert("Hola mundo");
+            console.log("Se dio click en el formulario")
+        })
+        */
+        $("#btnSubmit").click(function (e) {
+            e.preventDefault();
+            const nombre = $("#nombreInput").val();
+            const apellido = $("#apellidoInput").val();
+            const usuario = $("#userInput").val();
+            const password = $("#inputPassword").val();
+
+            const data = {
+                nombre: nombre,
+                apellido: apellido,
+                usuario: usuario,
+                password: password
+            }
+
+            $.ajax({
+                url: '/',
+                type: 'POST',
+                data: data,
+                success: function (response) {
+                    console.log(response);
+                    alert("Datos enviados correctamente")
+                },
+                error: function (error) {
+                    console.log(error);
+                    alert("Error al enviar los datos")
+                }
+            })
+        });
+
+    </script>
+
+    <footer>
+        <p class="copyright">Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/Navbar.js"></script>
+
+</body>
+
+</html>

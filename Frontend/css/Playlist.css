@@ -1,0 +1,27 @@
+.peliculas {
+  min-height: 76.75vh;
+}
+.peliculas .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.peliculas .container .cards .card {
+  margin: 2rem;
+}
+.peliculas .container .cards .card .videoContainer {
+  min-height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.peliculas .container .cards .card .videoContainer iframe {
+  border-radius: 5px;
+}
+.peliculas .container .cards .card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

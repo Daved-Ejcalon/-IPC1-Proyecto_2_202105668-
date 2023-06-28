@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/Base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="" id="logo_navbar">
+            <img src="images/logo.png" width="60" height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="" id="nav-item-Home">Home</a>
+                <a class="nav-item nav-link" href="" id="nav-item-IniciarSesion">Iniciar Sesión</a>
+                <a class="nav-item nav-link" href="" id="nav-item-Registrarme">Registrarme</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="inicio">
+        <div class="container">
+            <div class="col izq">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="col der">
+                <img src="images/peliculas.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ACERCA DE -->
+    <section class="acercade" id="acercade">
+        <div class="container">
+            <div class="col izq">
+                <div class="titulo-seccion">
+                    <p>Acerca de</p>
+                    <h2>Nosotros</h2>
+                </div>
+            </div>
+            <div class="col der">
+                <div class="texto">
+                    <p>
+                        Bienvenido a Peli Daved, tu destino cinematográfico definitivo para descubrir reseñas y obtener
+                        información detallada sobre las películas más populares. Nuestra pasión por el séptimo arte nos
+                        impulsa a brindarte una plataforma única donde puedes explorar y sumergirte en el fascinante
+                        mundo del cine.
+                    </p>
+                    <p>
+                        Además de los comentarios de los usuarios, Peli Daved te brinda información detallada sobre cada
+                        película,
+                        y guardar tus peliculas favoritas y descubrir joyas ocultas, clásicos atemporales y los últimos
+                        éxitos
+                        de taquilla.
+                    </p>
+                    <p>
+                        En Peli Daved, nos esforzamos por ser tu guía confiable en el vasto universo del cine. Explora,
+                        descubre y sumérgete en la magia de las películas con nosotros. ¡Bienvenido a bordo de esta
+                        emocionante aventura cinematográfica!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="datos" id="contacto_datos">
+            <div class="container" id="container_contacto">
+
+                <div class="blurb">
+                    <h3>Escríbenos</h3>
+                    <p>pelidaved@gmail.com</p>
+                </div>
+                <div class="blurb">
+                    <h3>Facebook</h3>
+                    <p>facebook.com/pelidaved</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/Navbar.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            sessionStorage.removeItem("user_data");
+        });
+    </script>
+
+</body>
+
+</html>

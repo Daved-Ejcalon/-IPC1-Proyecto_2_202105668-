@@ -1,0 +1,133 @@
+@light: #d8dbe0;
+@dark: #28292c;
+
+@texto-oscuro : #303133;
+@texto-claro : #777;
+@negro-custom: #141618;
+@fondo-oscuro : #1b1c1d;
+@blanco: #fff;
+@gris-claro: #DFDFDE;
+@gris-oscuro: #5c636a;
+@azul-claro: #317cc2;
+@azul-oscuro: #1d476f;
+
+input[type=file] {
+    display: block;
+    max-width: 450px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=file]:hover,
+input[type=file]:focus {
+    border-color: @gris-oscuro;
+    background-color: @blanco;
+    color: @gris-oscuro;
+}
+i{
+    color: whitesmoke;
+}
+
+.tabla-container{
+    max-height: 20rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.manejo_datos {
+    margin: 4rem 0;
+
+    .titulo-seccion {
+        margin: 0;
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        .col.izq {
+            width: 40%;
+            padding-right: 2.5%;
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 10rem;
+                height: auto;
+                margin: 2rem auto;
+            }
+        }
+
+        .col.der {
+            width: 60%;
+            padding-left: 2.5%;
+            display: flex;
+            flex-direction: column;
+            span{
+                margin: 1rem 0;
+            }
+            input[type=text]{
+                margin: 1rem 0;
+                width: 70%;
+                outline: none;
+                font-size: 1rem;
+                color: @texto-oscuro;
+                &.doble_input{
+                    width: 30%;
+                }
+            }
+            button{
+                margin: 0.9rem 0;
+            }
+        }
+    }
+}
+
+.container-tabla {
+    margin: 4rem 0;
+
+    .container {
+        padding: 2rem 0rem;
+    }
+
+    h4 {
+        margin: 2rem 0rem 1rem;
+    }
+
+    .table-image {
+        td,
+        th {
+            vertical-align: middle;
+        }
+    }
+}
+
+.peliculas {
+    margin: 4rem 0;
+
+}
+
+.usuarios {
+    margin: 4rem 0;
+}
+
+.modal_body_tabla{
+    .contenedor-card{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+

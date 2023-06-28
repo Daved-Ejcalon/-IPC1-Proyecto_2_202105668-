@@ -1,0 +1,72 @@
+input[type=file] {
+  display: block;
+  max-width: 450px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+input[type=file]:hover,
+input[type=file]:focus {
+  border-color: #5c636a;
+  background-color: #fff;
+  color: #5c636a;
+}
+i {
+  color: whitesmoke;
+  width: 5rem;
+  position: fixed;
+}
+.tabla-container {
+  max-height: 37.25vh;
+  min-height: 37.25vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.datos_pelicula {
+  margin: 4rem 0;
+  min-height: 64.1vh;
+}
+.datos_pelicula .titulo-seccion {
+  margin: 0;
+}
+.datos_pelicula .titulo-seccion h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+.datos_pelicula .container {
+  display: flex;
+  flex-direction: row;
+}
+.datos_pelicula .container .col.izq {
+  width: 60%;
+  padding-right: 2.5%;
+  display: flex;
+  flex-direction: column;
+}
+.datos_pelicula .container .col.izq .informacion_pelicula .videoContainer {
+  margin: 2.25rem 0;
+}
+.datos_pelicula .container .col.izq .informacion_pelicula h3,
+.datos_pelicula .container .col.izq .informacion_pelicula h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+.datos_pelicula .container .col.der {
+  width: 50%;
+  padding-left: 2.5%;
+}
+.datos_pelicula .container .col.der form {
+  margin-top: 2rem;
+}
+.datos_pelicula .container .col.der .tabla-container {
+  width: 100%;
+  display: block;
+}
+.datos_pelicula .container .col.der button {
+  margin-top: 1rem;
+}

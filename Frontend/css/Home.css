@@ -1,0 +1,83 @@
+.inicio {
+  background-color: #1b1c1d;
+}
+.inicio .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.inicio .container .col.izq {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-right: 5%;
+}
+.inicio .container .col.izq img {
+  width: 30rem;
+  height: auto;
+  margin: 2rem;
+}
+.inicio .container .col.der {
+  width: 60%;
+  padding-left: 5%;
+}
+.inicio .container .col.der img {
+  width: 50rem;
+  height: auto;
+  margin: 2rem;
+}
+.acercade {
+  padding: 2.525rem 0;
+}
+.acercade .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.acercade .container .col.izq {
+  width: 30%;
+  border-right: 1px solid #DFDFDE;
+  display: flex;
+  align-items: center;
+  padding-right: 5%;
+}
+.acercade .container .col.der {
+  width: 70%;
+  padding-left: 5%;
+}
+.acercade .container .col.der .texto p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #777;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.contacto .datos {
+  padding: 5rem 0 11.875rem 0;
+  background-color: #1b1c1d;
+}
+.contacto .datos .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contacto .datos .blurb {
+  background: #fff;
+  border: 6px double #DFDFDE;
+  padding: 2.25rem;
+  text-align: center;
+  width: 25%;
+  margin: 0 auto;
+}
+.contacto .datos h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.6875rem;
+  margin-bottom: 1.125rem;
+  border-bottom: 1px solid #DFDFDE;
+}
+.contacto .datos p {
+  font-size: 1rem;
+  color: #777;
+}
